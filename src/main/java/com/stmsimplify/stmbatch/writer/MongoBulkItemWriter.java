@@ -1,8 +1,6 @@
 package com.stmsimplify.stmbatch.writer;
 
 
-
-
 import com.stmsimplify.stmbatch.models.common.AbstractBatchEntityCommon;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.Document;

@@ -10,14 +10,14 @@ give file with extention of .txt we need to use excel to import it into csv form
 
 DB MONGO
 ========
-<h4>Custom path DB use to start mongodb you can change the path for your need.</h4>
+####Custom path DB use to start mongodb you can change the path for your need. <br>
 example: "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath C:\DEVDB\stmsimplify <br>
 More info at [https://docs.mongodb.com/guides/server/install/]
 
 check <b>application.properties</b> to configure to your local mongodb<br>
 by default it set to use database with name <b>stmsimplify</b> don't forget to create that database when you install mongo db<br>
 
-<h4>Useful command in mongo db</h4>
+####Useful command in mongo db
 navigate to mongodb directory to launch <b>mongo.exe</b> unless you have bind it has a variable system.<br>
 
 - use |your db name| -> switching database

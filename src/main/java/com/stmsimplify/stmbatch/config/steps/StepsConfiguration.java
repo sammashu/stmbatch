@@ -6,6 +6,7 @@ import com.stmsimplify.stmbatch.stepslisteners.*;
 import com.stmsimplify.stmbatch.writer.MongoBulkItemWriter;
 import com.stmsimplify.stmbatch.writer.MongoBulkItemWriterDelete;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.StepExecutionListener;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,34 +30,9 @@ public class StepsConfiguration {
 
     //StepListener Wiring
     @Resource
-    private StepAgencyListener stepAgencyListener;
+    private StepExecutionListener stepAgencyListener, stepCalendarDatesListener, stepFareAttributesListener, stepFareRulesListener, stepFrequenciesListener,
+            stepRoutesListener, stepShapesListener, stepStopsListener, stepStopTimesListener, stepTripsListener;
 
-    @Resource
-    private StepCalendarDatesListener stepCalendarDatesListener;
-
-    @Resource
-    private StepFareAttributesListener stepFareAttributesListener;
-
-    @Resource
-    private StepFareRulesListener stepFareRulesListener;
-
-    @Resource
-    private StepFrequenciesListener stepFrequenciesListener;
-
-    @Resource
-    private StepRoutesListener stepRoutesListener;
-
-    @Resource
-    private StepShapesListener stepShapesListener;
-
-    @Resource
-    private StepStopsListener stepStopsListener;
-
-    @Resource
-    private StepStopTimesListener stepStopTimesListener;
-
-    @Resource
-    private StepTripsListener stepTripsListener;
 
     @SuppressWarnings("unchecked")
     @Bean
