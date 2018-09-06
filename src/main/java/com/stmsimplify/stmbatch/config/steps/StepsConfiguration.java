@@ -112,7 +112,7 @@ public class StepsConfiguration {
         MongoBulkItemWriter writer = new MongoBulkItemWriter<>(FareRules.class);
         writer.setTemplate(mongoTemplate);
         writer.setCollection("farerules");
-        return stepBuilderFactory.get("stepFareAttributes").listener(stepFareRulesListener).<FareRules, FareRules>chunk(CHUNK)
+        return stepBuilderFactory.get("stepFareRules").listener(stepFareRulesListener).<FareRules, FareRules>chunk(CHUNK)
                 .reader(defaultReader)
                 .writer(writer)
                 .build();
@@ -124,7 +124,7 @@ public class StepsConfiguration {
         MongoBulkItemWriterDelete writer = new MongoBulkItemWriterDelete<>(FareRules.class);
         writer.setTemplate(mongoTemplate);
         writer.setCollection("farerules");
-        return stepBuilderFactory.get("stepFareAttributesDelete").listener(stepFareRulesListener).<FareRules, FareRules>chunk(CHUNK)
+        return stepBuilderFactory.get("stepFareRulesDelete").listener(stepFareRulesListener).<FareRules, FareRules>chunk(CHUNK)
                 .reader(defaultReader)
                 .writer(writer)
                 .build();
