@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Document(collection = "mongostm")
+@Document(collection = "fareattributes")
 @TypeAlias("fare_attributes")
 public class FareAttributes extends AbstractBatchEntityCommon implements Serializable {
 

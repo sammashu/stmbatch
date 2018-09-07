@@ -13,7 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-@Document(collection = "mongostm")
+@Document(collection = "frequencies")
 @TypeAlias("frequencies")
 public class Frequencies extends AbstractBatchEntityCommon implements Serializable {
 

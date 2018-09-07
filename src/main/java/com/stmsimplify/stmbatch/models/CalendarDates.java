@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.Objects;
 
 
-@Document(collection = "mongostm")
+@Document(collection = "calendardates")
 @TypeAlias("calendar_dates")
 public class CalendarDates extends AbstractBatchEntityCommon implements Serializable {
 

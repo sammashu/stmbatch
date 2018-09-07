@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-@Document(collection = "mongostm")
+@Document(collection = "stoptimes")
 @TypeAlias("stop_times")
 public class StopTimes extends AbstractBatchEntityCommon implements Serializable {
 
