@@ -11,7 +11,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Document(collection = "mongostm")
 public class StopTimesKey implements Serializable {
 
     private static final long serialVersionUID = 20000L;

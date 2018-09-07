@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.io.Serializable;
 import java.util.Objects;
 
-@Document(collection = "mongostm")
 public class TripsKey implements Serializable {
 
     private static final long serialVersionUID = 10000L;
